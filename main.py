@@ -11,6 +11,6 @@ morse = {
   '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
 }
 
-input = input('Enter the code you would like to translate")
-for i in range(input):
-  print(morse[i], end='')
+input = input('Enter the code you would like to translate:\n')
+for i in range(len(input)):
+  print(morse[input[i].upper()], end=' ')
